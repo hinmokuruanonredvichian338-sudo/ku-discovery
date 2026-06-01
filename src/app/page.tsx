@@ -15,6 +15,19 @@ export default function Home() {
       </header>
 
       <main className="max-w-4xl mx-auto px-4 py-8">
+        <a
+          href="https://www.amazon.co.jp/?tag=kudiscovery-22"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-between w-full mb-8 px-5 py-4 rounded-xl bg-amber-400 hover:bg-amber-500 transition-colors"
+        >
+          <div>
+            <p className="font-bold text-gray-900 text-base">Amazonで買い物する →</p>
+            <p className="text-xs text-gray-700 mt-0.5">このリンク経由で購入するとサイトの運営支援になります</p>
+          </div>
+          <span className="text-2xl">🛒</span>
+        </a>
+
         <div className="mb-8">
           <SearchBox />
         </div>
