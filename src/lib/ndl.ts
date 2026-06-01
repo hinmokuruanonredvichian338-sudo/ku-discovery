@@ -170,11 +170,11 @@ function shortenTitle(title: string): string {
 }
 
 export function buildAmazonKUUrl(title: string): string {
-  const params = new URLSearchParams({ k: `${shortenTitle(title)} kindle unlimited`, i: 'digital-text' })
+  const params = new URLSearchParams({ k: `${shortenTitle(title)} kindle unlimited`, i: 'digital-text', tag: 'kudiscovery-22' })
   return `https://www.amazon.co.jp/s?${params}`
 }
 
 export function buildAmazonKindleUrl(title: string): string {
-  const params = new URLSearchParams({ k: shortenTitle(title), i: 'digital-text' })
+  const params = new URLSearchParams({ k: shortenTitle(title), i: 'digital-text', tag: 'kudiscovery-22' })
   return `https://www.amazon.co.jp/s?${params}`
 }
